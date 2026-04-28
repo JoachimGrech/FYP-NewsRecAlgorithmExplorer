@@ -1,0 +1,930 @@
+[
+    {
+        "id": "user_1",
+        "name": "The Global Strategist",
+        "description": "Analyzes international relations, energy markets, and geopolitical tensions in the Middle East.",
+        "reading_history": [
+            {
+                "link": "https://www.aljazeera.com/news/2026/3/6/death-toll-in-israels-lebanon-attacks-over-120-as-beirut-south-east-hit?traffic_source=rss",
+                "title": "More than 120 killed in Israel’s Lebanon attacks as Beirut, south, east hit",
+                "dominant_topic": "topic_5",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 1.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/3/3/israeli-strikes-in-beirut-as-hezbollah-launches-drones-at-israel?traffic_source=rss",
+                "title": "Israeli strikes in Beirut as Hezbollah launches drones at Israel",
+                "dominant_topic": "topic_5",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 1.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/3/6/thousands-of-syrian-refugees-flee-lebanon-after-israeli-strikes?traffic_source=rss",
+                "title": "Thousands of Syrian refugees flee Lebanon after Israeli strikes",
+                "dominant_topic": "topic_5",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 1.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/c8eg97x5446o?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Chris Mason: Trump calls Starmer as US and Europe diverge on Iran strikes",
+                "dominant_topic": "topic_5",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 1.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.breitbart.com/politics/2026/03/09/rinos-ally-with-dems-to-take-over-republican-committee-with-fraudulent-election-in-deep-red-virginia-county/",
+                "title": "RINOs Ally with Dems to Take Over Republican Committee with Fraudulent Election in Deep Red Virginia County",
+                "dominant_topic": "topic_1",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 1.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.wired.com/story/ai-model-military-use-smack-technologies/",
+                "title": "What AI Models for War Actually Look Like",
+                "dominant_topic": "topic_5",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 1.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/c5yjj28jjd0o?at_medium=RSS&amp;at_campaign=rss",
+                "title": "US Senate vote fails to rein in Trump war powers on Iran",
+                "dominant_topic": "topic_5",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 1.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.maltatoday.com.mt/news/court_and_police/140083/police_investigating_death_of_11monthold_baby",
+                "title": "Police investigating death of 11-month-old baby",
+                "dominant_topic": "topic_1",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 1.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.aljazeera.com/news/2026/3/5/israeli-strikes-hit-beirut-amid-threats-on-iranian-officials-in-lebanon?traffic_source=rss",
+                "title": "Israeli attacks kill 8 in Lebanon amid threats on Iranian officials",
+                "dominant_topic": "topic_5",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 1.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/c3ewwlx9e1xo?at_medium=RSS&amp;at_campaign=rss",
+                "title": "GPS jamming: The invisible battle in the Middle East",
+                "dominant_topic": "topic_5",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 1.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.aljazeera.com/video/quotable/2026/3/12/there-is-only-one-person-who-can-decide-to-end-the-war-on-iran?traffic_source=rss",
+                "title": "There is only one person’ who can decide to end the war on Iran",
+                "dominant_topic": "topic_5",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 1.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.foxnews.com/us/haunting-note-vegas-hotel-door-hinted-tragedy-before-cheer-mom-daughter-found-dead",
+                "title": "Haunting note on Vegas hotel door hinted at tragedy before cheer mom, daughter found dead",
+                "dominant_topic": "topic_1",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 1.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.theguardian.com/world/2026/mar/12/gordon-brown-calls-for-international-criminal-court-for-crimes-against-children",
+                "title": "Gordon Brown calls for international criminal court for crimes against children",
+                "dominant_topic": "topic_1",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 1.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.theguardian.com/tv-and-radio/2026/mar/04/redlight-to-limelight-review-kolkata-sex-workers-bipuljit-basu-bbc-iplayer",
+                "title": "Redlight to Limelight review – the powerful tale of 500 sex workers who formed a film collective",
+                "dominant_topic": "topic_6",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 1.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/sport/football/articles/cwyklwdzljyo?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Arsenal undone by own set-piece weapon as 100% record ends",
+                "dominant_topic": "topic_7",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 1.0
+                }
+            }
+        ]
+    },
+    {
+        "id": "user_2",
+        "name": "The Local Policy Critic",
+        "description": "Focuses on Maltese governance, national infrastructure projects, and legislative reforms.",
+        "reading_history": [
+            {
+                "link": "https://techcrunch.com/video/poppi-founder-on-tiktok-super-bowl-ads-and-her-return-to-shark-tank/",
+                "title": "Poppi founder on TikTok, Super Bowl ads, and her return to Shark Tank",
+                "dominant_topic": "topic_2",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 1.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.foxnews.com/politics/unprecedented-agreement-releases-emergency-oil-reserves-gas-prices-spark-concerns",
+                "title": "'Unprecedented' agreement releases emergency oil reserves as gas prices spark concerns",
+                "dominant_topic": "topic_3",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 1.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/cd9gvv5w3v8o?at_medium=RSS&amp;at_campaign=rss",
+                "title": "There’s an inflation wave coming - what does the Iran war mean for the UK economy?",
+                "dominant_topic": "topic_3",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 1.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/cy031ylgepro?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Oil price jumps after Qatar warns all Gulf production could stop within days",
+                "dominant_topic": "topic_3",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 1.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://finance.yahoo.com/news/forbes-reveals-worlds-richest-people-223008937.html",
+                "title": "Forbes reveals world's richest people of 2026. See who made the list.",
+                "dominant_topic": "topic_2",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 1.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-monday-march-9-gold-opens-lower-after-oil-prices-spike-105854531.html",
+                "title": "Gold price today, Monday, March 9: Gold opens lower after oil prices spike",
+                "dominant_topic": "topic_3",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 1.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.cnn.com/cnn-underscored/deals/dyson-supersonic-sale-2023-04-17?iid=CNNUnderscoredHPcontainer?iid=CNNUnderscoredHPcontainer",
+                "title": "The beloved Dyson Supersonic hair dryer is at its lowest price ever",
+                "dominant_topic": "topic_2",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 1.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://lovinmalta.com/news/local/watch-robert-abela-addresses-oil-price-surge-in-parliament-amid-middle-east-conflict/",
+                "title": "Watch: Robert Abela Addresses Oil Price Surge In Parliament Amid Middle East Conflict",
+                "dominant_topic": "topic_3",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 1.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.nature.com/articles/d41586-026-00778-4",
+                "title": "Prevent pandemics through One Health commitments",
+                "dominant_topic": "topic_2",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 1.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.theguardian.com/business/2026/mar/10/qantas-hikes-international-airfares-citing-volatile-oil-prices-from-war-in-middle-east",
+                "title": "Qantas hikes international air fares citing volatile oil prices from war in Middle East",
+                "dominant_topic": "topic_3",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 1.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/videos/cedz4x07ezpo?at_medium=RSS&amp;at_campaign=rss",
+                "title": "How worried are Americans about rising petrol prices?",
+                "dominant_topic": "topic_3",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 1.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.aljazeera.com/news/2026/3/10/gaza-food-prices-soar-as-border-closures-deepen-shortages-amid-iran-war?traffic_source=rss",
+                "title": "Gaza food prices soar as crossing closures deepen shortages amid Iran war",
+                "dominant_topic": "topic_3",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 1.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.theguardian.com/tv-and-radio/2026/mar/08/the-capture-review-this-juicy-return-for-the-deepfake-conspiracy-thriller-is-full-of-truly-outrageous-twists",
+                "title": "The Capture review – this juicy return for the deepfake conspiracy thriller is full of truly outrageous twists",
+                "dominant_topic": "topic_1",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 1.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/cr457nq7z61o?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Why the price of oil matters more than you might think",
+                "dominant_topic": "topic_3",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 1.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://finance.yahoo.com/news/im-64-1-2-million-134301202.html",
+                "title": "I'm 64 With $1.2 Million in a 401(k) and $2,800 Monthly Social Security. How Much Can I Spend in Retirement?",
+                "dominant_topic": "topic_2",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 1.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            }
+        ]
+    },
+    {
+        "id": "user_3",
+        "name": "The Tech & Business Leader",
+        "description": "Tracks global trade, maritime logistics, and the regulation of emerging technologies.",
+        "reading_history": [
+            {
+                "link": "https://timesofmalta.com/article/man-grievously-injured-birzebbuga-car-crash.1124984",
+                "title": "Man grievously injured in Birżebbuġa car crash",
+                "dominant_topic": "topic_4",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 1.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/cvgv497gndno?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Price of first class stamps to rise to £1.80",
+                "dominant_topic": "topic_0",
+                "topic_vector": {
+                    "topic_0": 1.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/c5ykk1n77nko?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Starmer tries to reassure as Iran crisis deepens",
+                "dominant_topic": "topic_0",
+                "topic_vector": {
+                    "topic_0": 1.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.maltatoday.com.mt/business/business_news/140150/crediabank_announces_its_financial_results_for_2025",
+                "title": "CrediaBank announces its financial results for 2025",
+                "dominant_topic": "topic_4",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 1.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/cd70lgywgqqo?at_medium=RSS&amp;at_campaign=rss",
+                "title": "PM was warned of 'reputational risk' over Mandelson's Epstein links",
+                "dominant_topic": "topic_0",
+                "topic_vector": {
+                    "topic_0": 1.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://newsbook.com.mt/en/ombudsman-rules-children-were-unlawfully-detained-at-klabb-3-16-in-qawra/",
+                "title": "Ombudsman rules children were unlawfully detained at Klabb 3–16 in Qawra",
+                "dominant_topic": "topic_4",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 1.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.theguardian.com/world/2026/mar/08/ex-rapper-balendra-shah-nepal-pm-landslide-election-win",
+                "title": "Ex-rapper Balendra Shah set to be Nepal PM after party’s landslide election win",
+                "dominant_topic": "topic_0",
+                "topic_vector": {
+                    "topic_0": 1.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.maltatoday.com.mt/comment/opinions/139881/maltas_wage_problem_is_structural_and_education_is_the_only_way_out_",
+                "title": "Malta’s wage problem is structural and education is the only way out",
+                "dominant_topic": "topic_4",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 1.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.theguardian.com/education/2026/mar/10/sudanese-scientists-shock-home-office-ends-visas-for-sudan-students",
+                "title": "Sudanese students say UK visa ban has dashed hopes of studying at top universities",
+                "dominant_topic": "topic_0",
+                "topic_vector": {
+                    "topic_0": 1.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.maltatoday.com.mt/arts/art/140265/josette_fenech_the_convergence_of_art_and_empowerment_in_where_hands_meet_",
+                "title": "Josette Fenech: The convergence of art and empowerment in Where Hands Meet",
+                "dominant_topic": "topic_4",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 1.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://lovinmalta.com/malta/chart-the-future-of-maltese-publishing-register-now-for-the-inaugural-annual-book-conference/",
+                "title": "Chart The Future Of Maltese Publishing: Register Now For The Inaugural Annual Book Conference",
+                "dominant_topic": "topic_4",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 1.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/cy4wgzdydkeo?at_medium=RSS&amp;at_campaign=rss",
+                "title": "How the 'red v blue school wars' exposed the social media gap between children and parents",
+                "dominant_topic": "topic_0",
+                "topic_vector": {
+                    "topic_0": 1.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://lovinmalta.com/news/news-international/299-maltese-among-175000-applicants-for-eu-jobs/",
+                "title": "299 Maltese Among 175,000 Applicants For EU Jobs",
+                "dominant_topic": "topic_4",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 1.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://techcrunch.com/2026/03/11/vc-mega-funds-are-back-with-general-catalyst-spark-rumored-to-be-raising-billions/",
+                "title": "VC mega-funds are back with General Catalyst, Spark rumored to be raising billions",
+                "dominant_topic": "topic_2",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 1.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://finance.yahoo.com/news/fifth-third-bancorp-fitb-gets-013319046.html",
+                "title": "Fifth Third Bancorp (FITB) Gets Target Boost from Morgan Stanley amid Banking Tailwinds",
+                "dominant_topic": "topic_2",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 1.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            }
+        ]
+    },
+    {
+        "id": "user_4",
+        "name": "The Social & Arts Advocate",
+        "description": "Engaged with community health, emergency services, and the creative arts scene.",
+        "reading_history": [
+            {
+                "link": "https://www.bbc.co.uk/iplayer/episode/m002qmzj?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Tech Now",
+                "dominant_topic": "topic_6",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 1.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.nature.com/articles/d41586-026-00700-y",
+                "title": "Forget SkinTok: the real science of skincare and why it matters for your health",
+                "dominant_topic": "topic_6",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 1.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.wired.com/story/interstellar-comet-3i-atlas-has-another-surprise-its-full-of-alcohol/",
+                "title": "Interstellar Comet 3I/Atlas Has Another Surprise: It’s Full of Alcohol",
+                "dominant_topic": "topic_6",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 1.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.espn.com/wnba/story/_/id/48181364/wnba-union-conduct-2nd-straight-day-marathon-cba-talks",
+                "title": "WNBPA 'feeling movement' after latest CBA talks",
+                "dominant_topic": "topic_7",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 1.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/sport/football/articles/cvg37w0ll7xo?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Tudor's tactics: Pinpointing how his choices have made things worse",
+                "dominant_topic": "topic_7",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 1.0
+                }
+            },
+            {
+                "link": "https://www.maltatoday.com.mt/news/court_and_police/140142/two_motorcyclists_injured_in_separate_traffic_accidents",
+                "title": "Two motorcyclists injured in separate traffic accidents",
+                "dominant_topic": "topic_7",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 1.0
+                }
+            },
+            {
+                "link": "https://www.cnn.com/2023/04/14/entertainment/barry-season-4-review/index.html",
+                "title": "Review: 'Barry' takes a whack at its farewell season",
+                "dominant_topic": "topic_6",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 1.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/sport/horse-racing/articles/c1e910z6eyxo?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Redknapp's Jukebox Man confirmed for Gold Cup",
+                "dominant_topic": "topic_7",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 1.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/sport/football/videos/c62dq4n020wo?at_medium=RSS&amp;at_campaign=rss",
+                "title": "'He's lost the changing room' - Warnock on Tudor",
+                "dominant_topic": "topic_7",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 1.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/sport/tennis/articles/cly09grr65xo?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Draper fights to 'mind-blowing' win over Djokovic",
+                "dominant_topic": "topic_7",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 1.0
+                }
+            },
+            {
+                "link": "https://timesofmalta.com/article/dusk-dialogues-talks-continue-palazzo-falson.1125353",
+                "title": "‘Dusk Dialogues’ talks continue at Palazzo Falson",
+                "dominant_topic": "topic_6",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 1.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.nature.com/articles/s41586-026-10206-2",
+                "title": "A big-push community intervention reduced rates of child marriage by 80%",
+                "dominant_topic": "topic_6",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 1.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.com/news/articles/c4gjxwre1ydo?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Ministers offer Tories more peers to end hereditary bill standoff",
+                "dominant_topic": "topic_0",
+                "topic_vector": {
+                    "topic_0": 1.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.theguardian.com/us-news/2026/mar/06/us-venezuela-diplomatic-ties-relations-delcy-rodriguez",
+                "title": "US and Venezuela move to restore diplomatic ties two months after Maduro’s capture",
+                "dominant_topic": "topic_1",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 1.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 0.0
+                }
+            },
+            {
+                "link": "https://www.bbc.co.uk/iplayer/episode/m002qzkc?at_medium=RSS&amp;at_campaign=rss",
+                "title": "Tech Now",
+                "dominant_topic": "topic_7",
+                "topic_vector": {
+                    "topic_0": 0.0,
+                    "topic_1": 0.0,
+                    "topic_2": 0.0,
+                    "topic_3": 0.0,
+                    "topic_4": 0.0,
+                    "topic_5": 0.0,
+                    "topic_6": 0.0,
+                    "topic_7": 1.0
+                }
+            }
+        ]
+    }
+]
