@@ -20,10 +20,21 @@ def _encode_corpus(articles):
     embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
     valid_articles = [a for a in articles if len(f"{a.get('title', '')} {a.get('description', '')}") > 30]
-    print(f"Encoding {len(valid_articles)} articles with SBERT...")
-
     corpus_sentences = [f"{a.get('title', '')}. {a.get('description', '')}" for a in valid_articles]
-    corpus_embeddings = embedder.encode(corpus_sentences, show_progress_bar=True)
+    
+    cache_path = os.path.join('data', 'sbert_cache.npy')
+    if os.path.exists(cache_path):
+        print(f"Loading cached SBERT embeddings from {cache_path}...")
+        corpus_embeddings = np.load(cache_path)
+        if len(corpus_embeddings) != len(corpus_sentences):
+            print("Cache size mismatch, re-encoding...")
+            corpus_embeddings = embedder.encode(corpus_sentences, show_progress_bar=True)
+            np.save(cache_path, corpus_embeddings)
+    else:
+        print(f"Encoding {len(valid_articles)} articles with SBERT...")
+        corpus_embeddings = embedder.encode(corpus_sentences, show_progress_bar=True)
+        np.save(cache_path, corpus_embeddings)
+        
     return valid_articles, corpus_sentences, corpus_embeddings
 
 
@@ -81,26 +92,48 @@ def run_kmeans(articles, num_clusters=8):
     return articles
 
 
-def run_gmm(articles, num_clusters=8):
+def run_gmm(articles, num_clusters=8, temperature=35.0):
     """
     SBERT + Gaussian Mixture Model pipeline.
-    Uses GaussianMixture.predict_proba() to extract probabilistic soft-assignment
-    values P(cluster | article), stored in article['gmm_topic_vector'].
+    Uses a temperature-scaled posterior P(cluster | article) to ensure 
+    topic distributions represent a spectrum rather than a binary assignment.
     """
     valid_articles, corpus_sentences, corpus_embeddings = _encode_corpus(articles)
 
-    print(f"Fitting Gaussian Mixture Model (K={num_clusters}, covariance='full')...")
+    print(f"Fitting Gaussian Mixture Model (K={num_clusters}, covariance='spherical')...")
     print("  (Expectation-Maximization optimisation in progress, please wait.)")
+    
+    # Using 'spherical' covariance to prevent variance collapse in high-dimensional (384D) SBERT space.
+    # This also naturally aligns the GMM clusters much more closely with KMeans centroids.
     gmm = GaussianMixture(
         n_components=num_clusters,
-        covariance_type='full',   # each cluster has its own full covariance matrix
+        covariance_type='spherical',   
         random_state=42,
         max_iter=200,
-        init_params='kmeans'      # warm-start from KMeans for stability
+        init_params='kmeans'
     )
     gmm.fit(corpus_embeddings)
-    cluster_assignment = gmm.predict(corpus_embeddings)            # hard labels for keyword extraction
-    posterior_probs    = gmm.predict_proba(corpus_embeddings)      # true posteriors, shape (N, K)
+    
+    # We manually calculate temperature-scaled responsibilities.
+    # predict_proba() can be very "sharp" in high dimensions.
+    # log_resp = log_weighted_prob - log_sum_exp(log_weighted_prob)
+    
+    # estimate_weighted_log_prob returns the log-likelihood of each sample 
+    # for each component: log P(x | cluster_k) + log weight_k
+    weighted_log_probs = gmm._estimate_weighted_log_prob(corpus_embeddings)
+    
+    # Apply temperature scaling to the log-probabilities to "soften" the distribution
+    # T > 1.0 makes the distribution flatter (more spectrum-like)
+    # T < 1.0 makes it sharper (more binary)
+    soft_log_probs = weighted_log_probs / temperature
+    
+    # Softmax over clusters for each article
+    def softmax(x):
+        e_x = np.exp(x - np.max(x, axis=1, keepdims=True))
+        return e_x / e_x.sum(axis=1, keepdims=True)
+
+    posterior_probs = softmax(soft_log_probs)
+    cluster_assignment = np.argmax(posterior_probs, axis=1)
 
     print(f"  GMM converged: {gmm.converged_}  |  Log-likelihood: {gmm.lower_bound_:.4f}")
 
@@ -109,7 +142,7 @@ def run_gmm(articles, num_clusters=8):
         clean_text = " ".join(preprocess_text(corpus_sentences[idx]))
         cluster_texts[cluster_id].append(clean_text)
 
-        # True posterior: P(cluster_k | article) for each k
+        # Scaled posterior: P(cluster_k | article) for each k
         probs = posterior_probs[idx]
         valid_articles[idx]['gmm_topic_vector'] = {f"topic_{t}": float(probs[t]) for t in range(num_clusters)}
 
@@ -123,6 +156,7 @@ def main():
         "--method", choices=['kmeans', 'gmm'], default='kmeans',
         help="Clustering algorithm to use: 'kmeans' (default) or 'gmm'"
     )
+    parser.add_argument("--temp", type=float, default=35.0, help="Temperature for GMM softening (default: 35.0)")
     args = parser.parse_args()
 
     articles = load_json(DATA_PATH)
@@ -131,8 +165,8 @@ def main():
         return
 
     if args.method == 'gmm':
-        print("Running Topic Modeling Framework (SBERT + GMM)...")
-        updated_articles = run_gmm(articles, args.topics)
+        print(f"Running Topic Modeling Framework (SBERT + GMM) with T={args.temp}...")
+        updated_articles = run_gmm(articles, args.topics, args.temp)
         save_json(DATA_PATH, updated_articles)
         print(f"\nSuccessfully updated {DATA_PATH} with GMM embeddings (field: 'gmm_topic_vector').")
     else:

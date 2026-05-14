@@ -16,15 +16,19 @@ from utils import DATA_PATH, USERS_PATH, load_json
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
 
-NUM_CLUSTERS = 8  # Must match the K used when running run_topic_modeling.py --method gmm
-
-
 def get_gmm_vector(article):
     """Convert article['gmm_topic_vector'] dict to a fixed-length numpy array."""
-    arr = [0.0] * NUM_CLUSTERS
     vec_dict = article.get('gmm_topic_vector')
     if not vec_dict:
-        return np.array(arr)
+        return np.array([0.0] * 8)
+        
+    try:
+        max_idx = max(int(k.split('_')[1]) for k in vec_dict.keys())
+        size = max_idx + 1
+    except:
+        size = 8
+        
+    arr = [0.0] * size
     for k, v in vec_dict.items():
         try:
             idx = int(k.split('_')[1])
@@ -32,7 +36,6 @@ def get_gmm_vector(article):
         except (IndexError, ValueError):
             pass
     return np.array(arr)
-
 
 def cosine_similarity(vec_a, vec_b):
     """Cosine similarity between two vectors, safe against zero-norms."""
@@ -59,23 +62,38 @@ def calculate_user_gmm_profile(reading_history, article_index=None):
     in the snapshot itself).
     """
     if not reading_history:
-        return np.zeros(NUM_CLUSTERS)
+        return np.array([])
 
-    total = np.zeros(NUM_CLUSTERS)
+    first_vec = None
+    for snap in reading_history:
+        article = article_index.get(snap.get('link'), snap) if article_index else snap
+        vec = get_gmm_vector(article)
+        if len(vec) > 0:
+            first_vec = vec
+            break
+
+    if first_vec is None:
+        return np.array([])
+
+    total = np.zeros(len(first_vec))
     count = 0
     for snap in reading_history:
-        # Prefer the live article from the index (has gmm_topic_vector guaranteed)
-        if article_index:
-            article = article_index.get(snap.get('link'), snap)
-        else:
-            article = snap
+        article = article_index.get(snap.get('link'), snap) if article_index else snap
         vec = get_gmm_vector(article)
+        
+        if len(vec) < len(total):
+            padded = np.zeros(len(total))
+            padded[:len(vec)] = vec
+            vec = padded
+        elif len(vec) > len(total):
+            vec = vec[:len(total)]
+            
         if np.any(vec):
             total += vec
             count += 1
 
     if count == 0:
-        return np.zeros(NUM_CLUSTERS)
+        return np.zeros(len(first_vec))
     return total / count
 
 

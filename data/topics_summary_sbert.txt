@@ -1,0 +1,8 @@
+Cluster 0: scientist, energy, woman, week, country, middle, live, attack, price, government
+Cluster 1: trump, president, breitbart, minister, government, iran, country, week, woman, malta
+Cluster 2: price, energy, government, trump, malta, minister, country, iran, company, east
+Cluster 3: minister, woman, government, malta, attack, country, strike, breitbart, week, iranian
+Cluster 4: woman, malta, week, country, live, company, energy, breitbart, president, government
+Cluster 5: company, price, government, breitbart, energy, live, week, trump, scientist, east
+Cluster 6: week, woman, breitbart, malta, live, price, strike, country, company, trump
+Cluster 7: iran, trump, iranian, east, middle, president, strike, live, attack, price

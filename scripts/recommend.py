@@ -12,10 +12,17 @@ if hasattr(sys.stdout, 'reconfigure'):
 
 def get_vector_array(topic_vector_dict):
     """ Converts a dictionary vector {'topic_0': 1.0, ...} to a numpy array ordered by topic id """
-    # SBERT has 8 clusters (0 to 7)
-    arr = [0.0] * 8
     if not topic_vector_dict:
-        return np.array(arr)
+        return np.array([0.0] * 8)
+        
+    # Dynamically determine the size based on the keys
+    try:
+        max_idx = max(int(k.split('_')[1]) for k in topic_vector_dict.keys())
+        size = max_idx + 1
+    except:
+        size = 8
+        
+    arr = [0.0] * size
     for k, v in topic_vector_dict.items():
         try:
             # Assuming format 'topic_X'
@@ -34,11 +41,30 @@ def cosine_similarity(vec_a, vec_b):
 def calculate_user_profile_vector(reading_history):
     """ Average all the topic vectors of articles the user has read. """
     if not reading_history:
-        return np.zeros(8)
+        return np.array([])
         
-    sum_vector = np.zeros(8)
+    # Peak at the first valid vector to get the dimension
+    first_vec = None
+    for a in reading_history:
+        vec = get_vector_array(a.get('topic_vector') or a.get('gmm_topic_vector'))
+        if len(vec) > 0:
+            first_vec = vec
+            break
+            
+    if first_vec is None:
+        return np.array([])
+        
+    sum_vector = np.zeros(len(first_vec))
     for article in reading_history:
-        vec = get_vector_array(article.get('topic_vector'))
+        vec = get_vector_array(article.get('topic_vector') or article.get('gmm_topic_vector'))
+        # Pad or truncate if somehow mismatched, though shouldn't happen
+        if len(vec) < len(sum_vector):
+            padded = np.zeros(len(sum_vector))
+            padded[:len(vec)] = vec
+            vec = padded
+        elif len(vec) > len(sum_vector):
+            vec = vec[:len(sum_vector)]
+            
         sum_vector += vec
         
     # Average the vector
