@@ -1,0 +1,125 @@
+
+======================================================================
+  USER : The Global Strategist
+  DESC : Analyzes international relations, energy markets, and geopolitical tensions in the Middle East.
+======================================================================
++-----------------------------+----------------+-------------+------------------+
+| Metric                      | SBERT + KMeans | SBERT + GMM | Δ (GMM − KMeans) |
++-----------------------------+----------------+-------------+------------------+
+| Avg Relevance Score         | 0.9881         | 0.9910      | +0.0029          |
+| Intra-List Similarity (ILS) | 0.9974         | 0.9891      | -0.0083          |
+| Topic Coverage (of 8)       | 1              | 2           | +1               |
+| Hit Rate (top cluster)      | 100.00%        | 60.00%      |                  |
++-----------------------------+----------------+-------------+------------------+
+
+  [SBERT + KMeans] Top-5 recommendations:
+    [1] sim=0.989 | Nvidia Rises As GTC Show Starts, Tech Partner Sees Strong AI... [Cluster 5]
+    [2] sim=0.988 | 3 Reasons Why I'm Not Buying Dogecoin in 2026... [Cluster 5]
+    [3] sim=0.988 | Why Risk-Averse Investors Should Buy Nvidia Stock... [Cluster 5]
+    [4] sim=0.988 | Wiz investor unpacks Google’s $32B acquisition... [Cluster 5]
+    [5] sim=0.987 | American big business faces a $1trn capex question... [Cluster 5]
+
+  [SBERT + GMM]    Top-5 recommendations:
+    [1] sim=0.994 | Al Jazeera sees bombs being loaded onto US planes at UK base... [Cluster 7]
+    [2] sim=0.991 | Eight Arab, Islamic countries condemn Israeli closure of Al-... [Cluster 7]
+    [3] sim=0.990 | Sudan: Top UN aid official warns of ‘abandoned crisis’ as wa... [Cluster 3]
+    [4] sim=0.990 | Russia blames Ukrainian naval drones as tanker sinks in Medi... [Cluster 3]
+    [5] sim=0.990 | How the CIA Helped Locate a Missing Airman After Iran Downed... [Cluster 7]
+
+======================================================================
+  USER : The Local Policy Critic
+  DESC : Focuses on Maltese governance, national infrastructure projects, and legislative reforms.
+======================================================================
++-----------------------------+----------------+-------------+------------------+
+| Metric                      | SBERT + KMeans | SBERT + GMM | Δ (GMM − KMeans) |
++-----------------------------+----------------+-------------+------------------+
+| Avg Relevance Score         | 0.9722         | 0.9868      | +0.0146          |
+| Intra-List Similarity (ILS) | 0.9844         | 0.9866      | +0.0022          |
+| Topic Coverage (of 8)       | 1              | 2           | +1               |
+| Hit Rate (top cluster)      | 100.00%        | 80.00%      |                  |
++-----------------------------+----------------+-------------+------------------+
+
+  [SBERT + KMeans] Top-5 recommendations:
+    [1] sim=0.982 | Horizons and highways: Franco Fontana’s stunning photographi... [Cluster 3]
+    [2] sim=0.975 | Margareta Magnusson, Swedish ‘death cleaning’ author, dies a... [Cluster 3]
+    [3] sim=0.972 | Monty Python Got It Wrong About Medieval Disease... [Cluster 3]
+    [4] sim=0.966 | David Hockney review – a 90-metre vision of nature that only... [Cluster 3]
+    [5] sim=0.965 | Spectacular images reveal unique sea creatures and corals of... [Cluster 3]
+
+  [SBERT + GMM]    Top-5 recommendations:
+    [1] sim=0.991 | Southeast Asia shuts offices, limits travel as oil crisis de... [Cluster 2]
+    [2] sim=0.988 | Indonesia, US sign ‘major’ defence cooperation agreement... [Cluster 2]
+    [3] sim=0.987 | Germany has become a leader in plug-in solar. What’s taking ... [Cluster 2]
+    [4] sim=0.986 | 'The largest energy security threat in history' is about pus... [Cluster 2]
+    [5] sim=0.981 | Jet fuel crisis: Rationing triggered at four airports in Ita... [Cluster 7]
+
+======================================================================
+  USER : The Tech & Business Leader
+  DESC : Tracks global trade, maritime logistics, and the regulation of emerging technologies.
+======================================================================
++-----------------------------+----------------+-------------+------------------+
+| Metric                      | SBERT + KMeans | SBERT + GMM | Δ (GMM − KMeans) |
++-----------------------------+----------------+-------------+------------------+
+| Avg Relevance Score         | 0.7664         | 0.9909      | +0.2244          |
+| Intra-List Similarity (ILS) | 0.9657         | 0.9890      | +0.0233          |
+| Topic Coverage (of 8)       | 1              | 2           | +1               |
+| Hit Rate (top cluster)      | 100.00%        | 60.00%      |                  |
++-----------------------------+----------------+-------------+------------------+
+
+  [SBERT + KMeans] Top-5 recommendations:
+    [1] sim=0.771 | Australia and New Zealand’s Self-Inflicted Fuel Crisis... [Cluster 4]
+    [2] sim=0.766 | Starmer vows to crack down on 'profiteering' from fuel crisi... [Cluster 4]
+    [3] sim=0.766 | Starmer vows to crack down on 'profiteering' from fuel crisi... [Cluster 4]
+    [4] sim=0.765 | Jet fuel crisis: Rationing triggered at four airports in Ita... [Cluster 4]
+    [5] sim=0.765 | Millions of Cubans plunged into darkness as fuel crisis deep... [Cluster 4]
+
+  [SBERT + GMM]    Top-5 recommendations:
+    [1] sim=0.992 | Half of Maltese non-homeowners do not see property purchase ... [Cluster 2]
+    [2] sim=0.991 | Trouble on AUM&#8217;s horizon as university struggles to re... [Cluster 2]
+    [3] sim=0.991 | Kanye West ordered to pay $140K in Malibu mansion renovation... [Cluster 3]
+    [4] sim=0.990 | A Year After DOGE Cuts, GSA Now Plans to Hire Hundreds of Em... [Cluster 2]
+    [5] sim=0.990 | Reflecting on New York City’s Largest Nurses’ Strike... [Cluster 3]
+
+======================================================================
+  USER : The Social & Arts Advocate
+  DESC : Engaged with community health, emergency services, and the creative arts scene.
+======================================================================
++-----------------------------+----------------+-------------+------------------+
+| Metric                      | SBERT + KMeans | SBERT + GMM | Δ (GMM − KMeans) |
++-----------------------------+----------------+-------------+------------------+
+| Avg Relevance Score         | 0.9800         | 0.9897      | +0.0097          |
+| Intra-List Similarity (ILS) | 0.9839         | 0.9770      | -0.0069          |
+| Topic Coverage (of 8)       | 2              | 2           | +0               |
+| Hit Rate (top cluster)      | 80.00%         | 60.00%      |                  |
++-----------------------------+----------------+-------------+------------------+
+
+  [SBERT + KMeans] Top-5 recommendations:
+    [1] sim=0.987 | 'No one wants to fight for Israel': Marine veteran removed f... [Cluster 7]
+    [2] sim=0.985 | Ted Cruz, Tucker Carlson reignite feud over Iran war... [Cluster 7]
+    [3] sim=0.981 | James Carville: 'Trump Threw in the White Flag' on Iran... [Cluster 7]
+    [4] sim=0.975 | Video: Attack on Two Israeli Americans Speaking Hebrew at a ... [Cluster 6]
+    [5] sim=0.972 | Activists fear that missing critic of Iran exiled in Canada ... [Cluster 7]
+
+  [SBERT + GMM]    Top-5 recommendations:
+    [1] sim=0.993 | Lewis Hamilton sets sights on racing in an African grand pri... [Cluster 6]
+    [2] sim=0.990 | AEW star Dustin Rhodes shares health update, why company's o... [Cluster 6]
+    [3] sim=0.989 | Arc Raiders Boss Says Bungie Did a 'Really Good Job' Address... [Cluster 6]
+    [4] sim=0.988 | Why independence is still a political dividing line in Scotl... [Cluster 0]
+    [5] sim=0.988 | Shocking footage shows Alonso struggling to hold on to vibra... [Cluster 0]
+
+======================================================================
+  AGGREGATE COMPARISON SUMMARY
+  Metric definitions:
+    Rel  = Avg Relevance Score  (higher = more on-target)
+    ILS  = Intra-List Similarity (higher = stronger filter bubble)
+    Cov  = Topic Coverage out of 8 clusters (higher = more diverse)
+    HR   = Hit Rate on user top cluster (higher = more personalised)
+======================================================================
++--------------------------+--------+---------+--------+---------+--------+---------+---------+--------+
+| User                     | KM-Rel | GMM-Rel | KM-ILS | GMM-ILS | KM-Cov | GMM-Cov | KM-HR   | GMM-HR |
++--------------------------+--------+---------+--------+---------+--------+---------+---------+--------+
+| The Global Strategist    | 0.9881 | 0.9910  | 0.9974 | 0.9891  | 1      | 2       | 100.00% | 60.00% |
+| The Local Policy Critic  | 0.9722 | 0.9868  | 0.9844 | 0.9866  | 1      | 2       | 100.00% | 80.00% |
+| The Tech & Business Lead | 0.7664 | 0.9909  | 0.9657 | 0.9890  | 1      | 2       | 100.00% | 60.00% |
+| The Social & Arts Advoca | 0.9800 | 0.9897  | 0.9839 | 0.9770  | 2      | 2       | 80.00%  | 60.00% |
++--------------------------+--------+---------+--------+---------+--------+---------+---------+--------+
