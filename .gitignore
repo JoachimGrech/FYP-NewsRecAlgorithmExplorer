@@ -1,22 +1,19 @@
+# Python
 __pycache__/
 *.pyc
-.env
-.venv/
-*.zip
-~$*
-docx_content.txt
-target_text.txt
-scripts/target_text.txt
+*.pyo
+*.pyd
+
+# Data & Caches
+data/sbert_cache.npy
 data/debug_output.txt
 data/sbert_error.txt
-data/validation_sample.txt
-data/sbert_cache.npy
-data/inspect_output.txt
-FYP_Report.docx
-FYP_Report_Updated.docx
-FYP_Report_utf8.txt
-FICT_Article_Draft.md
-GrechJoachim_9105H_Image1.jpg
-JoachimGrech_PR.pdf
-analyze_clusters.py
-scripts/__pycache__/
+
+# Microsoft Word (Temporary Files)
+~$*
+
+# Environments
+.env
+.venv/
+env/
+venv/
